@@ -12,7 +12,7 @@ volume_size = "100"
 }
 provisioner "remote-exec" {
     inline = [
-        "sudo wget -Nnv 'https://raw.githubusercontent.com/officialabhradip/terraform-elk-aws/master/elk.sh' && bash elk.sh"
+        "sudo wget -Nnv https://raw.githubusercontent.com/officialabhradip/terraform-elk-aws/master/elk.sh && bash elk.sh"
         "sleep 10"
     ]
   }
